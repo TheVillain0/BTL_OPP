@@ -99,3 +99,26 @@
 .button-setting.active {
     -fx-graphic: url('../resource/media/hover/setting.png');
 }
+.button-favourite {
+    -fx-graphic: url('../resource/media/normal/favourite.png');
+}
+
+.button-favourite:hover {
+    -fx-graphic: url('../resource/media/hover/favourite.png');
+}
+
+.button-favourite.active {
+    -fx-graphic: url('../resource/media/hover/favourite.png');
+}
+
+.button-history {
+    -fx-graphic: url('../resource/media/normal/history.png');
+}
+
+.button-history:hover {
+    -fx-graphic: url('../resource/media/hover/history.png');
+}
+
+.button-history.active {
+    -fx-graphic: url('../resource/media/hover/history.png');
+}

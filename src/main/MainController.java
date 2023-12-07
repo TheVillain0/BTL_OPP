@@ -15,6 +15,10 @@ public class MainController implements Initializable {
     @FXML
     private AnchorPane searchPane;
     @FXML
+    private AnchorPane bookmarkPane;
+    @FXML
+    private AnchorPane historyPane;
+    @FXML
     private AnchorPane translatePane;
     @FXML
     private AnchorPane settingPane;
@@ -23,6 +27,10 @@ public class MainController implements Initializable {
 
     @FXML
     private SearchController searchController;
+    @FXML
+    private BookmarkController bookmarkController;
+    @FXML
+    private HistoryController historyController;
 
     @FXML
     private Button searchButton;
@@ -30,6 +38,10 @@ public class MainController implements Initializable {
     private Button translateButton;
     @FXML
     private Button gameButton;
+    @FXML
+    private Button bookmarkButton;
+    @FXML
+    private Button mainHistoryButton;
     @FXML
     private Button settingButton;
 
@@ -57,6 +69,22 @@ public class MainController implements Initializable {
         resetStyleNav();
         translateButton.getStyleClass().add("active");
         setMainContent(translatePane);
+    }
+
+    @FXML
+    public void showBookmarkPane() {
+        resetStyleNav();
+        bookmarkButton.getStyleClass().add("active");
+        bookmarkController.initBookmarkListView();
+        setMainContent(bookmarkPane);
+    }
+
+    @FXML
+    public void showHistoryPane() {
+        resetStyleNav();
+        mainHistoryButton.getStyleClass().add("active");
+        historyController.initHistoryListView();
+        setMainContent(historyPane);
     }
     
     @FXML
@@ -97,6 +125,20 @@ public class MainController implements Initializable {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("setting.fxml"));
             settingPane = loader.load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("bookmark.fxml"));
+            bookmarkPane = loader.load();
+            bookmarkController = loader.getController();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("history.fxml"));
+            historyPane = loader.load();
+            historyController = loader.getController();
         } catch (Exception e) {
             e.printStackTrace();
         }

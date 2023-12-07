@@ -47,6 +47,24 @@
                   <String fx:value="button-game" />
                </styleClass>
             </Button>
+            <Button fx:id="bookmarkButton" contentDisplay="TOP" layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onAction="#showBookmarkPane" prefHeight="58.0" prefWidth="57.0" text="Lưu từ" textFill="#8e9297">
+               <font>
+                  <Font size="7.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-navi-bar" />
+                  <String fx:value="button-favourite" />
+               </styleClass>
+            </Button>
+            <Button fx:id="mainHistoryButton" contentDisplay="TOP" layoutX="10.0" layoutY="171.0" mnemonicParsing="false" onAction="#showHistoryPane" prefHeight="58.0" prefWidth="57.0" text="Lịch sử" textFill="#8e9297">
+               <font>
+                  <Font size="7.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-navi-bar" />
+                  <String fx:value="button-history" />
+               </styleClass>
+            </Button>
          </children>
       </VBox>
       <VBox alignment="CENTER" prefHeight="22.0" prefWidth="57.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0">
@@ -62,6 +80,6 @@
             </Button>
          </children>
       </VBox>
-      <AnchorPane fx:id="mainContent" layoutX="57.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="mainContent" layoutX="49.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="7.7999999999999545" AnchorPane.topAnchor="0.0" />
    </children>
 </AnchorPane>

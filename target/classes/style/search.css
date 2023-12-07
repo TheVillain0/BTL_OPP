@@ -138,6 +138,14 @@
     -fx-graphic: url('../resource/media/normal/favourite.png');
 }
 
+.button-favourite-false {
+    -fx-graphic: url('../resource/media/normal/favourite.png');
+}
+
+.button-favourite-false:hover {
+    -fx-graphic: url('../resource/media/hover/favourite.png');
+}
+
 .button-save {
     -fx-graphic: url('../resource/media/normal/save.png');
 }
@@ -165,3 +173,4 @@
 .button-remove:hover {
     -fx-graphic: url('../resource/media/hover/remove.png');
 }
+
